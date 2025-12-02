@@ -64,13 +64,25 @@ Un exporteur Prometheus pour les capteurs environnementaux IKEA Dirigera (Vindri
 Les métriques sont exposées sur `http://<IP>:9850/metrics` au format Prometheus. Exemple :
 
 ```
-# HELP ikea_sensor_temperature_celsius Temperature in Celsius for <sensor_name>
+# HELP ikea_sensor_temperature_celsius Temperature in Celsius for salon
 # TYPE ikea_sensor_temperature_celsius gauge
-ikea_sensor_temperature_celsius{sensor_name="salon"} 23.5
+ikea_sensor_temperature_celsius{sensor_name="salon"} 18.0
 
-# HELP ikea_sensor_humidity_percent Humidity percentage for <sensor_name>
+# HELP ikea_sensor_humidity_percent Humidity percentage for salon
 # TYPE ikea_sensor_humidity_percent gauge
-ikea_sensor_humidity_percent{sensor_name="salon"} 45.0
+ikea_sensor_humidity_percent{sensor_name="salon"} 64.0
+
+# HELP ikea_sensor_pm25_ugm3 PM2.5 concentration in µg/m³ for salon
+# TYPE ikea_sensor_pm25_ugm3 gauge
+ikea_sensor_pm25_ugm3{sensor_name="salon"} 641.0
+
+# HELP ikea_sensor_voc_index VOC index for salon
+# TYPE ikea_sensor_voc_index gauge
+ikea_sensor_voc_index{sensor_name="salon"} 67.0
+
+# HELP ikea_sensor_last_seen_timestamp Last seen timestamp for salon
+# TYPE ikea_sensor_last_seen_timestamp gauge
+ikea_sensor_last_seen_timestamp{sensor_name="salon"} 1.7647110767915194e+09
 ```
 
 ## 🔧 Développement
