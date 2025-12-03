@@ -1,6 +1,7 @@
 # IKEA Dirigera Exporter
 
 [![Docker Image Size](https://img.shields.io/docker/image-size/theobarrague/ikea_exporter/latest)](https://hub.docker.com/r/theobarrague/ikea_exporter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/theobarrague/ikea_exporter)](https://hub.docker.com/r/theobarrague/ikea_exporter)
 [![Python Version](https://img.shields.io/badge/python-3.14+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
